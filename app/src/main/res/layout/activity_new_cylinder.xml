@@ -25,10 +25,11 @@
         android:gravity="center"
         android:trackTint="@drawable/switch_bg"
         android:text="@string/smart_device_include" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="251dp"
+        android:layout_height="169dp"
         app:srcCompat="@drawable/cylindersize" />
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
