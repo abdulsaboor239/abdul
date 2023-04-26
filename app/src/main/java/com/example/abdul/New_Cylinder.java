@@ -61,10 +61,16 @@ public class New_Cylinder extends AppCompatActivity {
                 Map<String,Object> user = new HashMap<>();
                 user.put("Size",size);
                 user.put("Color",color);
+
                 user.put("Smart Device Included",smart);
 //                add date and time
                 Date date = new Date();
                 user.put("Date",date.toString());
+//               loggedInUser name and email
+                user.put("Name",mAuth.getCurrentUser().getDisplayName());
+                user.put("Email",mAuth.getCurrentUser().getEmail());
+//               user id
+                user.put("User ID",userID);
                 fStore.collection("bookings").document(userID).set(user).addOnSuccessListener(
                         new OnSuccessListener<Void>() {
                             @Override
