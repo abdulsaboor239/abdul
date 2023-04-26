@@ -28,6 +28,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/complain_detail"
         android:hint="@string/enter_your_complain_here"
+        android:inputType="textMultiLine"
         android:gravity="top"
         android:lines="6"/>
 

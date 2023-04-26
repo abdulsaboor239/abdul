@@ -38,6 +38,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/cylindersize"
+            android:inputType="text"
             android:layout_width="455dp"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -57,6 +58,7 @@
             android:layout_width="456dp"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:inputType="text"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20sp"
             android:hint="@string/enter_cylinder_color_red_yellow_grey" />
