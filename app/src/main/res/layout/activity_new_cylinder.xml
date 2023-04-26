@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/lpg"
+    tools:context=".New_Cylinder">
+
+    <TextView
+        android:layout_width="335dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="80sp"
+        android:gravity="center"
+        android:text="Booking"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+    <Switch
+        android:id="@+id/smartdevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:trackTint="@drawable/switch_bg"
+        android:text="@string/smart_device_include" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="251dp"
+        app:srcCompat="@drawable/cylindersize" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cylindersize"
+            android:layout_width="455dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+
+            android:hint="@string/Enter_Cylinder_Size" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cylindercolor"
+            android:layout_width="456dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20sp"
+            android:hint="@string/enter_cylinder_color_red_yellow_grey" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/place_order"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:text="@string/place_order" />
+
+    <Button
+        android:id="@+id/backhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:text="@string/back_to_home"
+        app:strokeColor="#D82020" />
+
+
+
+
+</LinearLayout>

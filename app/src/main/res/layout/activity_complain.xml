@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/lpg"
+    android:padding="25dp"
+    tools:context=".Complain">
+
+    <TextView
+        android:layout_width="335dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="50sp"
+        android:gravity="center"
+        android:text="@string/Smart_LPG_Provider"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/complain_detail"
+        android:hint="@string/enter_your_complain_here"
+        android:gravity="top"
+        android:lines="6"/>
+
+
+
+</com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_gravity="center"
+        android:text="@string/submit" />
+    <Button
+        android:id="@+id/home"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/Back_to_Home" />
+
+
+
+</LinearLayout>
